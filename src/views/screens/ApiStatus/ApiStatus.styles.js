@@ -31,38 +31,6 @@ export const AlertContainer = styled.div.attrs({
   margin-bottom: 4rem;
 `;
 
-export const Alert = styled.div.attrs({
-  className: "Alert",
-})`
-  color: #fff;
-  padding: 1rem;
-  border-radius: 5px;
-  font-family: Arial, Helvetica, sans-serif;
-
-  ul {
-    margin-bottom: 0;
-    margin-top: 0.5rem;
-    li {
-      padding-bottom: 0.5rem;
-
-      &:last-child {
-        padding-bottom: 0;
-      }
-    }
-  }
-
-  ${(props) => {
-    switch (props.variant) {
-      case "primary":
-        return "background:#27ae60";
-      case "secondary":
-        return "background:#ff084a";
-      default:
-        return "background:#fff";
-    }
-  }}
-`;
-
 //INTERVAL
 export const IntervalContainer = styled.div.attrs({
   className: "IntervalContainer",
@@ -151,22 +119,3 @@ export const StatusCardHelper = styled.div.attrs({
     }
   }}
 `;
-
-// export const Badge = styled.div.attrs({
-//   className: "Badge",
-// })`
-//   padding: 0.5rem;
-//   border-radius: 5px;
-//   font-size: 0.875rem;
-
-//   ${(props) => {
-//     switch (props.variant) {
-//       case "primary":
-//         return "background: #27ae60; color: #fff;";
-//       case "secondary":
-//         return "background: #ff084a; color: #fff;";
-//       default:
-//         return "background: #ff084a; color: #fff;";
-//     }
-//   }}
-// `;

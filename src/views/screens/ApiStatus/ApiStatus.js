@@ -7,7 +7,7 @@ import {
   Content,
   Logo,
   AlertContainer,
-  Alert,
+  // Alert,
   IntervalContainer,
   IntervalButtons,
   IntervalButton,
@@ -40,7 +40,7 @@ const ApiStatus = () => {
 
   //Components Hooks
   const { useComponents } = useViews();
-  const { Badge } = useComponents();
+  const { Badge, Alert } = useComponents();
 
   return (
     <Container className="container">
