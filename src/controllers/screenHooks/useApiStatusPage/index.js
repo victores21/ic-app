@@ -14,18 +14,23 @@ const useStatusPage = () => {
   const { getAllApisStatusService } = useApiStatusServices();
 
   //Functions
+
+  //Extracts the endpoint name from the URL
   const getApiNameFromURL = (api) => {
     const apiName = api.split(".com/")[1].split("/")[0];
     return apiName;
   };
 
+  // Handles Interval Time
   const handleIntervalTime = (time) => {
     setIntervalTime(time);
   };
 
+  // Removes special characters from endpoint message
   const removeSpecialCharacters = (str) => {
     return str.replace(/[^a-zA-Z]/g, "");
   };
+
   //USE EFFECTS
   //   First Loading
   useEffect(() => {

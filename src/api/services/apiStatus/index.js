@@ -1,6 +1,7 @@
 import axios from "axios";
 
 const useApiStatusServices = () => {
+  //Fetch specific api status
   const getApiStatusService = async (api) => {
     const request = axios({
       method: "GET",
@@ -9,6 +10,7 @@ const useApiStatusServices = () => {
     return request;
   };
 
+  // Fetch all apis statuses
   const getAllApisStatusService = async () => {
     const listOfApis = [
       "accounts",
