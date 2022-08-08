@@ -15,7 +15,6 @@ import {
   StatusList,
   StatusCard,
   StatusCardHelper,
-  Badge,
 } from "./ApiStatus.styles";
 
 //Images
@@ -23,6 +22,7 @@ import LogoImage from "../../../assets/img/logo-inclusion.svg";
 
 //Hooks
 import useControllers from "../../../controllers";
+import useViews from "../..";
 
 const ApiStatus = () => {
   //Hooks
@@ -37,6 +37,10 @@ const ApiStatus = () => {
     handleIntervalTime,
     removeSpecialCharacters,
   } = useStatusPage();
+
+  //Components Hooks
+  const { useComponents } = useViews();
+  const { Badge } = useComponents();
 
   return (
     <Container className="container">
